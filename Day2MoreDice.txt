@@ -1,0 +1,8 @@
+We define E to be the event satisfying the following conditions:
+
+    1.The values rolled by both dice are different.
+    2.The sum of the values rolled is 6.
+
+The set of outcomes satisfying E is:{(1,5),(2,4),(4,2),(5,1)}. We also know that |S| (the size of the sample space) is 36, because there are 6 possible rolls per die and we have 2 dice (6^2 = 36) We can use this to find:
+
+	P(E) = |E|/|S| = 4/36 = 1/9
