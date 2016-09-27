@@ -1,0 +1,34 @@
+Let's define the following events:
+
+Urn X
+
+    1. E(x,r):Four of the seven balls are red, so P(Ex,r) = 4/7 .
+    2. E(x,b):Three of the seven balls are black, so P(Ex,r) = 3/7.
+
+Urn Y
+
+    1. E(y,r):Four of the seven balls are red, so P(Ey,r) = 5/9 .
+    2. E(y,b):Three of the seven balls are black, so P(Ey,r) = 4/9.
+
+Urn Z
+
+    1. E(z,r):Four of the seven balls are red, so P(Ez,r) = 1/2 .
+    2. E(z,b):Three of the seven balls are black, so P(Ez,r) = 1/2.
+
+Let E(X,Y,Z) be the result of drawing ball from each urn. We care about three scenarios:
+    
+    1. E(R,R,B)
+        
+        P(E(R,R,B)) = P(Ex,r) x P(Ey,r) x P(Ez,b) = 20/126
+    
+    2. E(R,B,R)
+        
+        P(E(R,B,R)) = P(Ex,r) x P(Ey,r) x P(Ez,b) = 16/126
+        
+    1. E(B,R,R)
+        
+        P(E(B,R,R)) = P(Ex,r) x P(Ey,r) x P(Ez,b) = 15/126
+
+Now, let's find the probabilty for the event E, getting two red and one black balls. Because each event is independent of one another, we can simply sum their probabilities:
+
+P(2 balls are red and 1 is black) = P(E(R,R,B)) + P(E(R,B,R)) +P(E(B,R,R)) = 51/126 = 17/42
