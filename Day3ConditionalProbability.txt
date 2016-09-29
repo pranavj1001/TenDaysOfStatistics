@@ -1,0 +1,18 @@
+We assume gender to be a binary value (either G or B) with the probability of either gender being 1/2. The sample space for the genders of two children is S = {BB,BG,GB,GG}, with each event having an equal probability of 1/2 x 1/2 = 1/4. From this, we can say the following:
+
+    The probability of one child being a boy if both children are boys is P(B|BB) = 1.
+    The probability of at least one of the two children being a boy is:
+        P(B) = P(BB) + P(BG) + P(GB) = 1/4 + 1/4 + 1/4 = 3/4
+    The probability of two of two children being boys is:
+        P(BB) = P(B)xP(B) = 1/2x1/2 = 1/4
+
+
+We want to find the probability that the second child is a boy given that the other child is a boy. We can determine this by applying the above information to Bayes' Theorem:
+    
+    P(BB|B) = (P(B|BB)xP(BB))/P(B) = (1 x 1/4)/(3/4)
+
+Another way to approach this problem is to reduce the sample space so that it only contains events where one child is a boy: Sb = {BB,BG,GB}.
+
+If we consider event E to be the event in which both children are boys (so E = {BB}), we can find the probability as a fraction of the reduced sample space:
+    
+    P(E) = |E|/|S| = 1/3
