@@ -1,0 +1,27 @@
+Recall that a deck has 52 cards, 4 suits, and 13 cards of each suit.
+
+Approach 1
+
+Let's define the following events:
+
+    1. E: Drawing 2 cards of same suit (each suit has 13 cards).
+    2. S: Drawing 2 cards from a deck of 52 cards.
+
+To count the number of ways E occurs (the set's cardinality), we need to find the number of ways that a single suit can be chosen from 4 suits and multiply it by the number of ways 2 cards can be chosen from 13 cards (the number of cards per suit):
+
+          (4)   (13)
+    |E| =     x      = (4!)/(1!.(4-1)!) x (13!)/(2!.(13-2)!) = 4 x (13.2)/2 = 4 x 78 = 312
+          (1)    (2)
+
+To count the number of ways S occurs (the set's cardinality), we need to find the number of ways that cards can be chosen from a deck of 52 cards:
+
+    |S| = (52) = (52!)/2!.(52-2)! = 52.51/2 = 1326
+           (2)
+
+Now that we have the number of desirable events, , and the size of the sample space, , we can find the probability of our desirable event occurring:
+
+        P(E) = |E|/|S| = 312/1326 = 12/51 = 4/17
+
+Approach 2
+
+The first card drawn will be from any of the 4 suits and there will be 51 cards left in the deck, only 12 of which match the drawn card's suit. The probability of the second card being of the same suit is 12/51 = 4/17.
